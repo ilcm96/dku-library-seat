@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://library-seat.pages.dev" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- HTML Meta Tags -->
+    <title>단국대학교 도서관 열람실 사용률</title>
+    <meta name="description" content="실시간, 지난 1주, 그리고 과거 시험기간의 열람실 사용률을 확인하세요" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://library-seat.pages.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="단국대학교 도서관 열람실 사용률" />
+    <meta property="og:description" content="실시간, 지난 1주, 그리고 과거 시험기간의 열람실 사용률을 확인하세요" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="seongmin.dev" />
+    <meta property="twitter:url" content="https://library-seat.pages.dev" />
+    <meta name="twitter:title" content="단국대학교 도서관 열람실 사용률" />
+    <meta name="twitter:description" content="실시간, 지난 1주, 그리고 과거 시험기간의 열람실 사용률을 확인하세요" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>단국대학교 열람실 사용률</h1>
+      <p>library-seat.pages.dev</p>
+      <div class="date-range">
+        <input type="date" id="start-date" aria-label="시작 날짜" />
+        <input type="date" id="end-date" aria-label="종료 날짜" />
+      </div>
+      <button id="calculate-btn">사용률 조회</button>
+      <div class="button-container">
+        <button id="pre-rltm">실시간</button>
+        <button id="pre-week">지난 1주일</button>
+        <button id="pre-1">24-1학기 중간고사</button>
+        <button id="pre-2">24-2학기 중간고사</button>
+      </div>
+      <div class="chart-container">차트 로딩 중...</div>
+      <br />
+      <p style="font-size: 75%">본 그래프는 도서관 홈페이지 데이터에 기반하며, 현장과는 차이가 있을 수 있습니다</p>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script src="index.js"></script>
+</html>

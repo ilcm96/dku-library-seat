@@ -1,0 +1,5 @@
+exported_d1/
+dist/
+node_modules/
+.wrangler/
+.idea/
