@@ -1,9 +1,8 @@
 // 초기 날짜 설정
 document.addEventListener("DOMContentLoaded", async () => {
   const today = new Date();
-  const weekAgo = new Date(today - 6 * 24 * 60 * 60 * 1000);
 
-  document.getElementById("start-date").valueAsDate = weekAgo;
+  document.getElementById("start-date").valueAsDate = today;
   document.getElementById("end-date").valueAsDate = today;
 
   const startDate = document.getElementById("start-date").value;
@@ -57,18 +56,18 @@ document.getElementById("pre-week").addEventListener("click", async () => {
   document.getElementById("calculate-btn").click();
 });
 
-// 24-1학기 중간고사
+// 24-1학기 기말고사
 document.getElementById("pre-1").addEventListener("click", async () => {
-  document.getElementById("start-date").valueAsDate = new Date("2024-04-15");
-  document.getElementById("end-date").valueAsDate = new Date("2024-04-24");
+  document.getElementById("start-date").valueAsDate = new Date("2024-06-11");
+  document.getElementById("end-date").valueAsDate = new Date("2024-06-20");
 
   document.getElementById("calculate-btn").click();
 });
 
-//24-1학기 기말고사
+//24-2학기 중간고사
 document.getElementById("pre-2").addEventListener("click", async () => {
-  document.getElementById("start-date").valueAsDate = new Date("2024-06-11");
-  document.getElementById("end-date").valueAsDate = new Date("2024-06-20");
+  document.getElementById("start-date").valueAsDate = new Date("2024-10-21");
+  document.getElementById("end-date").valueAsDate = new Date("2024-10-31");
 
   document.getElementById("calculate-btn").click();
 });
